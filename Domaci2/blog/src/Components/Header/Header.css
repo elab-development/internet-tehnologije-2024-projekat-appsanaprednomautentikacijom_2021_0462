@@ -1,14 +1,14 @@
-  /* Container styling for center alignment */
+
 .container {
-    margin-top: 20px; /* Adjust for navbar height */
+    margin-top: 20px; 
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    height: 100vh; /* Full viewport height */
-    padding-top: 10vh; /* Position the card slightly above the center */
+    height: 100vh; 
+    padding-top: 10vh; 
   }
   
-  /* Card Styling */
+  
   .card {
     background: linear-gradient(
         rgba(0, 0, 0, 0.5),
@@ -17,74 +17,74 @@
       url('../Assets/pexels-pixabay-417173.jpg');
     background-size: cover;
     background-position: center;
-    width: 60%; /* Slightly smaller width for a balanced design */
-    height: 60%; /* Adjust height to maintain proportions */
-    padding: 30px; /* Add more padding for better spacing */
-    border-radius: 20px; /* More rounded corners for a modern look */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow for emphasis */
+    width: 60%; 
+    height: 60%; 
+    padding: 30px; 
+    border-radius: 20px; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
-  /* Hover effect on card */
+  
   .card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Enhance hover shadow */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); 
   }
   
-  /* Card image styling */
+  
   .card-image {
     width: 100%;
     height: auto;
     border-radius: 12px;
-    margin-bottom: 20px; /* Add spacing below the image */
+    margin-bottom: 20px; 
   }
   
-  /* Title styling */
+  
   .card-title {
     font-size: 36px;
-    color: #f8f9fa; /* Light color for better contrast */
+    color: #f8f9fa; 
     font-weight: bold;
     margin: 20px 0;
-    margin-top: 90px; /* Adjust top margin for better spacing */
-    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7); /* Add subtle shadow for depth */
+    margin-top: 90px; 
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7); 
   }
   
-  /* Button styling */
+  
   .card-button {
-    background: linear-gradient(45deg, #007bff, #0056b3); /* Gradient background */
+    background: linear-gradient(45deg, #007bff, #0056b3); 
     color: white;
-    padding: 15px 30px; /* Bigger button size */
+    padding: 15px 30px; 
     border: none;
-    border-radius: 30px; /* Smooth, pill-shaped button */
+    border-radius: 30px; 
     cursor: pointer;
     transition: background 0.3s ease, transform 0.2s ease;
-    margin-top: 50px; /* Adjust spacing from the title */
-    width: 30%; /* Slightly wider for better balance */
-    font-size: 16px; /* Increase font size for readability */
+    margin-top: 50px; 
+    width: 30%; 
+    font-size: 16px; 
     font-weight: bold;
   }
   
-  /* Button hover effect */
+ 
   .card-button:hover {
-    background: linear-gradient(45deg, #0056b3, #003580); /* Darker hover gradient */
-    transform: scale(1.1); /* Slight enlarge effect on hover */
+    background: linear-gradient(45deg, #0056b3, #003580);
+    transform: scale(1.1); 
   }
   
   
-  /* Optional: Add responsiveness */
+ 
   @media (max-width: 768px) {
     .card {
-      width: 80%; /* Adjust card size for smaller screens */
-      height: auto; /* Maintain proportional height */
+      width: 80%; 
+      height: auto; 
     }
   
     .card-button {
-      width: 50%; /* Make button more accessible */
-      font-size: 14px; /* Adjust font size */
+      width: 50%; 
+      font-size: 14px; 
     }
   
     .card-title {
-      font-size: 28px; /* Adjust title size */
+      font-size: 28px; 
     }
   }
