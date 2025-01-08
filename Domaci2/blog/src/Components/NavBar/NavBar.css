@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #3e2723; 
+  background-color: black; 
   padding: 1rem 2rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* senka */
   transition: background-color 0.3s ease; /* hover tranzicija */
