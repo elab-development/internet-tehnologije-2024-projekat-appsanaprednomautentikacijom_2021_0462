@@ -1,0 +1,50 @@
+ /* .Comment{
+     background-color: black; 
+    
+ } */
+  .comment-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 70%; 
+    padding: 20px; 
+
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease;
+
+    margin: 0; 
+    margin-left: 15%;
+    margin-right: 10%;
+    border-radius: 30px;
+}
+.comment-container:hover{
+    background-color: #007bff; 
+    color: white;
+}
+.text {
+    flex: 1; /* Proširi tekst na raspoloživi prostor */
+    padding: 20px; /* Dodaj prostor oko teksta */
+    font-size: 16px; /* Prilagodi veličinu teksta */
+    text-align: justify; /* Poravnaj tekst ulevo */
+    font-style: italic;
+}
+.text-above{
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+
+.profile-picture1{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: url('../Assets/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-left: 20%;
+
+}
+
+

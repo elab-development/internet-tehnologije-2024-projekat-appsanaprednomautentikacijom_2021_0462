@@ -4,8 +4,9 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    height: 100vh; 
+    height: 87vh; 
     padding-top: 10vh; 
+    /* background-color: red; */
   }
   
   
@@ -18,7 +19,7 @@
     background-size: cover;
     background-position: center;
     width: 60%; 
-    height: 60%; 
+    height: 80%; 
     padding: 30px; 
     border-radius: 20px; 
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
