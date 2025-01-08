@@ -1,7 +1,7 @@
 
-import LoginForm from './Components/LoginForm/LoginForm';
+import LoginForm from './Components/LoginForm/LoginForm.jsx';
 import {BrowserRouter,Routes,Route} from 'react-router-dom';
-import NavBar from './Components/NavBar/NavBar';
+import NavBar from './Components/NavBar/NavBar.jsx';
 
 function App() {
   return (

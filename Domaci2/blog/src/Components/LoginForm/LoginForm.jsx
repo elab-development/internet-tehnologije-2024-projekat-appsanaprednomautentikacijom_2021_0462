@@ -8,7 +8,7 @@ export const LoginForm = () => {
 
  <div className="page">
     <div className='wrapper'>
-    <div className='center'>
+      <div className='center'>
         <form action ="">
             <h1>Login</h1>
             <div className="input-box">
@@ -32,9 +32,9 @@ export const LoginForm = () => {
                 <p>Dont't have an account? <a href="#">Register</a></p>
             </div>
         </form>
-    </div> 
+      </div> 
     </div>
-    </div>   
+</div>   
   )
 }
 export default LoginForm;
