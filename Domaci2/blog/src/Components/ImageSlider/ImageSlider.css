@@ -1,0 +1,12 @@
+.gallery{
+    margin-top: 80px;
+    position: relative;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+}
+.title{
+   margin: 0;
+   text-align: center;
+    
+}
