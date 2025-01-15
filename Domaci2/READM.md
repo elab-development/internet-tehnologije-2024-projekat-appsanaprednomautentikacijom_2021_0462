@@ -1,0 +1,1 @@
+Readme za domaci 2
