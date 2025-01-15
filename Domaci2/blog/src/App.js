@@ -6,12 +6,14 @@ import Header from './Components/Header/Header.jsx';
 import Comment from './Components/Comment/Comment.jsx';
 import ImageSlider from './Components/ImageSlider/ImageSlider.jsx';
 import './Components/ImageSlider/ImageSlider.css';
+import './Components/Footer/Footer.jsx';
 
 //importovanje slika za slider
 import slika1 from './Components/ImageSlider/ImagesSlider/slika1.jpg';
 import slika2 from './Components/ImageSlider/ImagesSlider/slika2.jpg';
 import slika3 from './Components/ImageSlider/ImagesSlider/slika3.jpg';
 import slika4 from './Components/ImageSlider/ImagesSlider/slika4.jpg';
+import Footer from './Components/Footer/Footer.jsx';
 
 
 
@@ -44,6 +46,7 @@ function App() {
             <div className='gallery'><h1 className='title'>Check our Gallery!</h1></div>
           <ImageSlider slides={slides}/>
           </div>
+          <Footer/>
           </>}/>
       </Routes>  
     </BrowserRouter>
