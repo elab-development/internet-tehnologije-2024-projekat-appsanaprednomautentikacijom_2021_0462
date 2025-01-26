@@ -1,28 +1,18 @@
 import React from 'react'
 import './Card.css';
 
-const Card = ({ image, title, description, buttonText, personName }) => {
+function Card(){
   return(
-    <div class="page-container">
-  <div class="centered-div">
-    <div class="title">
-        <h1>TravelBlog</h1>
-        <p className='title-card'>Explore destinations and experiences from all over the world!</p>
-    </div>
-    <div class="card-container">
-      <div class="card">1</div>
-      <div class="card">2</div>
-      <div class="card">3</div>
-      <div class="card">3</div>
-      <div class="card">3</div>
-      <div class="card">3</div>
-      <div class="card">3</div>
-      <div class="card">3</div>
-      
-    </div>
+    <>
+    <div className="card">
+      <img src="https://via.placeholder.com/300" alt="Card image"/>
+      <h2 className="card-title">Card Title</h2>
+      <p className="card-text">This is an example of a card component. Add your descriptive text here.</p>
+      <button className="card-button">Click Me</button>
+      <span className="card-person">John Doe</span>
   </div>
-</div>
+    </>
   );
-}
+};
 
 export default Card
