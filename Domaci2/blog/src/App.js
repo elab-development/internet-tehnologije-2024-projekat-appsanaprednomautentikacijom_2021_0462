@@ -5,20 +5,26 @@ import NavBar from './Components/NavBar/NavBar.jsx';
 import Header from './Components/Header/Header.jsx';
 import Comment from './Components/Comment/Comment.jsx';
 import ImageSlider from './Components/ImageSlider/ImageSlider.jsx';
+import Card from './Components/Card/Card.jsx';
 import './Components/ImageSlider/ImageSlider.css';
 import './Components/Footer/Footer.jsx';
-import Card from './Components/Card/Card.jsx';
+
 //importovanje slika za slider
 import slika1 from './Components/ImageSlider/ImagesSlider/slika1.jpg';
 import slika2 from './Components/ImageSlider/ImagesSlider/slika2.jpg';
 import slika3 from './Components/ImageSlider/ImagesSlider/slika3.jpg';
 import slika4 from './Components/ImageSlider/ImagesSlider/slika4.jpg';
 import Footer from './Components/Footer/Footer.jsx';
+//importovanje slika za kartice
+
 
 
 
 
 function App() {
+
+
+
 
   const slides=[
     {url:slika1, title: 'Beach'},
@@ -49,7 +55,7 @@ function App() {
           </div>
           <Footer/>
           </>}/>
-          <Route path="blog" element={<><Card/></>}/>
+          <Route path="blog" element={<Card/>}/> 
       </Routes>  
     </BrowserRouter>
   );
