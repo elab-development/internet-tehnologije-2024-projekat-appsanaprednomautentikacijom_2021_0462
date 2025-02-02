@@ -22,14 +22,14 @@
     color: white;
 }
 .text {
-    flex: 1; /* Proširi tekst na raspoloživi prostor */
-    padding: 20px; /* Dodaj prostor oko teksta */
-    font-size: 16px; /* Prilagodi veličinu teksta */
-    text-align: justify; /* Poravnaj tekst ulevo */
+    flex: 1; 
+    padding: 20px; 
+    font-size: 16px; 
+    text-align: justify; 
     font-style: italic;
 }
 .text-above{
-    font-size: 36px;
+    font-size: 60px;
     font-weight: bold;
     text-align: center;
     padding-bottom: 70px;

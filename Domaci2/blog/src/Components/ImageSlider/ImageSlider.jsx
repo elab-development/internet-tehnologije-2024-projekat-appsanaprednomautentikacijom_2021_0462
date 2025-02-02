@@ -71,6 +71,7 @@ const ImageSlider = ({slides}) => {
     }
 
   return (
+    
     <div style={sliderStyles}>
         <div style={leftArrowStyles} onClick={goToPrevious}><GrFormPrevious />
         </div>

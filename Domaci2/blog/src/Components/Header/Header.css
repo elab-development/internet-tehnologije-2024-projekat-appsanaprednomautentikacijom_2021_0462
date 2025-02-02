@@ -1,5 +1,5 @@
 
-.container {
+.container-header {
     margin-top: 20px; 
     display: flex;
     justify-content: center;
@@ -10,7 +10,7 @@
   }
   
   
-  .card {
+  .card-header {
     background: linear-gradient(
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
@@ -28,13 +28,13 @@
   }
   
   
-  .card:hover {
+  .card-header:hover {
     transform: translateY(-10px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); 
   }
   
   
-  .card-image {
+  .card-image-header {
     width: 100%;
     height: auto;
     border-radius: 12px;
@@ -42,7 +42,7 @@
   }
   
   
-  .card-title {
+  .card-title-header {
     font-size: 36px;
     color: #f8f9fa; 
     font-weight: bold;
@@ -52,7 +52,7 @@
   }
   
   
-  .card-button {
+  .card-button-header {
     background: linear-gradient(45deg, #007bff, #0056b3); 
     color: white;
     padding: 15px 30px; 
@@ -67,7 +67,7 @@
   }
   
  
-  .card-button:hover {
+  .card-button-header:hover {
     background: linear-gradient(45deg, #0056b3, #003580);
     transform: scale(1.1); 
   }
