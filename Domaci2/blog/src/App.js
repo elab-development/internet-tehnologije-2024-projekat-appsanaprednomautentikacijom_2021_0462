@@ -7,6 +7,7 @@ import Comment from './Components/Comment/Comment.jsx';
 import ImageSlider from './Components/ImageSlider/ImageSlider.jsx';
 import Cards from './Components/Cards/Cards.jsx';
 import Card from './Components/Card/Card.jsx';
+import AboutUs from './Components/AboutUs/AboutUs.jsx';
 import './Components/ImageSlider/ImageSlider.css';
 import './Components/Footer/Footer.jsx';
 
@@ -24,6 +25,7 @@ import slikablog3 from './Components/Card/card_images/slikablog3.jpg';
 import slikablog4 from './Components/Card/card_images/slikablog4.jpg';
 import slikablog5 from './Components/Card/card_images/slikablog5.jpeg';
 import slikablog6 from './Components/Card/card_images/slikablog6.jpg';
+
 
 
 
@@ -93,6 +95,7 @@ function App() {
         <Route path="home" element={<>
           <NavBar/>
           <Header/>
+          <AboutUs/>
           <Comment/>
           <div className='gallery'>
           <h1 className='title'>Check our Gallery!</h1>
