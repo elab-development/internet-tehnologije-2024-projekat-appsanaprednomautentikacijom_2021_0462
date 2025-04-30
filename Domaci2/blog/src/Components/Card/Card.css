@@ -1,0 +1,55 @@
+.blogCard {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  margin: 20px;
+  padding: 15px;
+  /* background-color: #262626; */
+}
+
+.blogCard:hover {
+  transform: translateY(-10px); /* Lift the card effect */
+}
+
+.blogCard img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  
+}
+
+.destinationName {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.smallDescription {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.cardButton {
+  background-color: darkorange;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.cardButton:hover {
+  background-color: #0056b3;
+}
+
+.userName {
+  font-size: 14px;
+  text-align: right;
+  margin-top: 10px;
+}

@@ -1,0 +1,178 @@
+.header{
+  max-height: 860px;
+  width: 100%;
+  display: flex;
+
+}
+.first-box{
+  min-height: 300px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.font, .paragraph, .dugme-first-box{
+  margin-top: 120px;
+  margin-left: 160px;
+}
+.font {
+  font-family: "Playwrite GB S", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 80px;
+}
+
+.paragraph {
+  font-family: "Mali", serif;
+  font-weight: 300;
+  font-style: normal;
+  margin-top: 30px;
+}
+.dugme-first-box {
+  background-color: orange; 
+  color: black;
+  width: 150px;
+  height: 40px;
+  border-radius: 40px;
+  border: 0px; 
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  margin-top: 30px;
+}
+
+
+.second-box{
+  min-height: 300px;
+  width: 50%;
+}
+.slika_header{
+  width: 950px;
+  height: 750px;
+  margin-left: 20px;
+  margin-bottom: 800px;
+}
+
+
+/* Za male ekrane (mobiteli) */
+@media (max-width: 480px) {
+  .font {
+    font-size: 40px;
+  }
+
+  .paragraph {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+
+  .dugme-first-box {
+    width: 120px;
+    height: 35px;
+    font-size: 14px;
+  }
+
+  .slika_header {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
+}
+
+/* Za srednje ekrane (tableti) */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .first-box, .second-box {
+    width: 100%;
+    text-align: center;
+  }
+
+  .font {
+    font-size: 60px;
+    margin-left: 0;
+  }
+
+  .paragraph {
+    margin-left: 0;
+    font-size: 18px;
+  }
+
+  .dugme-first-box {
+    width: 130px;
+    height: 35px;
+  }
+
+  .slika_header {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+}
+
+    @media (max-width: 1740px) {
+      .slika_header {
+        width: 99%; /* Smanji širinu slike na 90% ekrana */
+        height: 620px;
+      }
+    }
+/* Za laptop ekrane */
+@media (max-width: 1600px) {
+  
+  .font, .paragraph, .dugme-first-box{
+    margin-left: 110px;
+  }
+  .font{
+    font-size: 70px;
+  }
+  .slika_header {
+    width: 99%; /* Smanji širinu slike na 90% ekrana */
+    height: 620px;
+  }
+}
+
+/* Za laptop ekrane */
+@media (max-width: 1520px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .first-box, .second-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .font {
+    font-size: 70px; /* Malo manji font za laptop */
+    margin-left: 0;
+  }
+
+  .paragraph {
+    margin-left: 0;
+    font-size: 20px;
+  }
+
+  .dugme-first-box {
+    width: 140px;
+    height: 40px;
+    margin-bottom: 120px;
+    margin-left: 0;
+  }
+
+  .slika_header {
+    width: 40%; /* Smanji širinu slike na 90% ekrana */
+    height: auto;
+    margin-left: 0;
+    margin-bottom: 70px;
+  }
+}
