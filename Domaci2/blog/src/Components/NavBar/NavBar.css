@@ -2,23 +2,31 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: black; 
+  background-color: #7fbd8a; 
   padding: 1rem 2rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* senka */
-  transition: background-color 0.3s ease; /* hover tranzicija */
+  min-width: 300px;
 }
 
-.navbar-logo a {
-  font-size: 2rem; 
-  color: #f1faee; 
+.link {
+  font-size: 32px; 
+  color: black; 
+
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 900;
   letter-spacing: 1px; 
-  transition: color 0.3s ease; /*logo tranzicija smooth*/
-}
-
-.navbar-logo a:hover {
-  color: #ffb703; 
+  transition: color 0.3s ease; 
+   font-family: "Sour Gummy", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+      /* font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 15,
+    "SHLN" 11.6;
+    font-size: 40px; */
 }
 
 .navbar-links {
@@ -31,14 +39,23 @@
 }
 
 .navbar-links a {
-  color: #f1faee; 
+  color: black; 
   text-decoration: none;
-  font-size: 1.2rem; 
+  font-size: 25px; 
+  font-weight: 500; 
+  font-family: "Sour Gummy", serif;
+  font-optical-sizing: auto;
   font-weight: 500;
-  position: relative; 
-  transition: color 0.3s ease, transform 0.2s ease, background-color 0.3s ease; 
+  font-style: normal;
+    /* font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 15,
+    "SHLN" 11.6; */
+    /* font-size: 40px; */
 }
-
 
 .navbar-links a:hover {
   color: #1d3557; 
@@ -54,19 +71,34 @@
 }
 
 
-/*Kreiranje responzivnosti za manje ekrane tipa telefon itd...*/
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    padding: 1rem;
+@media(max-width:1600px){
+  .navbar{
+   width: 100% !important;
   }
+}
 
-  .navbar-links {
-    flex-direction: column;
-    margin-top: 1rem;
+@media(max-width:835px){
+  .link{
+    font-size: 10px;
   }
+  .home, .about, .dest, .blog, .kontakt{
+    font-size: 10px !important;
+  }
+}
 
-  .navbar-links li {
-    margin: 0.5rem 0; /* vertikalno redjanje elemenata kada se smanjuje ekran */
+@media(max-width:712px){
+  .navbar{
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media(max-width:428px){
+  .navbar-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }

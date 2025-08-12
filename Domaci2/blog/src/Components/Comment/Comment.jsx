@@ -1,41 +1,37 @@
 import './Comment.css';
-import osoba1 from './Comment_images/person1.jpg';
-import osoba2 from './Comment_images/person2.jpg';
-import osoba3 from './Comment_images/person3.jpg';
+import knjiga from './Comment_images/knjiga.png'
+import laptop from './Comment_images/laptop.png'
+import galerija from './Comment_images/galerija.png'
+import blob1 from './Comment_images/blob1.png'
 
 
 function Comment(){
 
     return (
-        <div className='comment'>
+        <div className="app-feature-container">
+            <div className="app-feature-content">
 
-            <h1 className='comment-title'>Guest Feedback</h1>
+                
+                    <h1 className='app-top-h1'>App Features</h1>
+                    <p className='app-top-h3'>Discover inspiring travel stories, explore stunning galleries, and connect with fellow adventurers</p>
+                
 
-            <div className='comments'>
-
-                <div className='c1'>
-                    <img src={osoba1} alt="slika1" className='comment-img'/>
-                    <h1 className='naslov-comment'>James R.</h1>
-                    <p className='text-comment'>"Absolutely love this blog! The travel guides are super detailed, and the tips helped me plan my last trip perfectly."</p>
+                <div className="app-feature-bottom">
+                    <div className="app-box1">
+                        <img src={knjiga} alt="knjiga" className='app-box1-img'/>
+                        <p className='app-box1-p'>Discover firsthand experiences from fellow travelers</p>
+                    </div>
+                    <div className="app-box2">
+                        <img src={laptop} alt="" className='app-box2-img'/>
+                        <p className='app-box2-p'> Read stories, tips, and experiences shared by travelers worldwide</p>
+                    </div>
+                    <div className="app-box3">
+                        <img src={galerija} alt="" className='app-box3-img'/>
+                        <p className='app-box3-p'> Explore stunning photos from travelers around the world</p>
+                    </div>
                 </div>
-
-                <div className='c2'>
-                    <img src={osoba2}  alt="slika2" className='comment-img'/>
-                    <h1 className='naslov-comment'>Daniel T.</h1>
-                    <p className='text-comment'>"Great mix of personal experiences and useful travel hacks! The photography is stunning too—makes me want to pack my bags and go explore."</p>
-                </div>
-
-                <div className='c3'>
-                    <img src={osoba3}  alt="slika3" className='comment-img'/>
-                    <h1 className='naslov-comment'>Michael B.</h1>
-                    <p className='text-comment'>"This blog has become my go-to for trip inspiration. I appreciate the honest reviews and off-the-beaten-path recommendations. Keep up the great work!"</p>
-                </div>
-
 
             </div>
-
-
-
         </div>
     );
 }

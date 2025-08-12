@@ -1,26 +1,36 @@
 
 import './Header.css';
-import slika_header from './Header_images/pozadina_header.jpg'
+import { useNavigate } from 'react-router-dom';
+
+
 
 
 function Header(){
 
+  const navigate = useNavigate();
+
+  const explore = ()=>{
+    navigate('/blog')
+  };
+
   return(
-  <div className='header'>
-    
-    <div className='first-box'>
-      <h1 className='font'>Discover Your <br/> Life Journey</h1>
-      <p className='paragraph'>Life is an ever-evolving adventure, filled with new experiences, challenges, and opportunities<br/> Travelblog is your guide to personal growth, self-discovery, and meaningful connections<br/> Unlock Your Potential – Gain insights and wisdom</p>
-      <button className='dugme-first-box'>Get Started</button>
+    <div className="div-section">
+
+      <div className="header-container">
+        <div className="left-div-header">
+        
+            <h1 className='header-h1'>TravelBlog</h1>
+            <p className='header-par'>"One World, Infinite Journeys."</p>
+            <button className='header-bu' onClick={explore}>Explore</button>
+
+        </div>
+        <div className="right-div-header">
+          
+            {/* <img src={slika_header} alt="" className='header-slika'/> */}
+          
+        </div>
+      </div>
     </div>
-
-    <div className='second-box'>
-    <img src={slika_header} alt="slika" className='slika_header'/>
-    </div>
-
-
-
-  </div>
   );
 }
 

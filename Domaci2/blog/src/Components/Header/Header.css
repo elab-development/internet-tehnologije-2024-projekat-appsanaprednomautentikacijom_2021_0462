@@ -1,178 +1,112 @@
-.header{
-  max-height: 860px;
+.div-section {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 80vh;
   width: 100%;
+  min-width: 300px;
+  background-color: #dcd7c9;
   display: flex;
-
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.first-box{
-  min-height: 300px;
+.header-container {
+  background-color: #2c3930;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
+  width: 80%;
+  margin: auto;
+  height: 90%;
+  /* min-width: 300px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 1;
+  padding: 30px;
+  border-radius: 50px;
+}
+.left-div-header {
+  height: 60%;
+  /* flex-grow: 1; */
+  background-color: #a27b5c;
+  /* flex-shrink: 1; */
+  flex-basis: 1;
   width: 50%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  margin-right: -100px;
+  border-radius: 20px;
 }
-.font, .paragraph, .dugme-first-box{
-  margin-top: 120px;
-  margin-left: 160px;
+.right-div-header {
+  height: 90%;
+  /* flex-grow: 1; */
+  background-color: #3f4f44;
+  /* margin-left: -50px; */
+  /* flex-shrink: 1; */
+  flex-basis: 1;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-radius: 200px 0px 0px px;
+  /* position: relative; */
+  z-index: 1;
+  border-radius: 8px;
+  background-image: url("./Header_images/nesto.avif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-.font {
-  font-family: "Playwrite GB S", serif;
-  font-optical-sizing: auto;
+.left-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+  min-width: 50px;
+}
+.header-h1 {
+  font-family: "Merriweather", serif;
   font-weight: 900;
   font-style: normal;
-  font-size: 80px;
+  font-size: 30px;
+  min-width: 50px;
+  word-break: break-word; /* Ensures long words break */
+  overflow-wrap: break-word; /* Alternative way to break words */
+  white-space: normal;
+  padding-bottom: 30px;
 }
-
-.paragraph {
-  font-family: "Mali", serif;
-  font-weight: 300;
+.header-par {
+  font-family: "Tangerine", serif;
+  font-weight: 400;
   font-style: normal;
-  margin-top: 30px;
+  font-size: 40px;
+  font-style: italic;
+  padding-bottom: 30px;
 }
-.dugme-first-box {
-  background-color: orange; 
-  color: black;
-  width: 150px;
-  height: 40px;
-  border-radius: 40px;
-  border: 0px; 
-  font-size: 15px;
+.header-bu {
+  border-radius: 0px;
+  text-decoration: none;
+  padding: 14px 21px;
+  font-size: 13px;
+  line-height: 25px;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  letter-spacing: 3px;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.header-bu:hover {
+  border: solid 2px black;
+  background: #1f1f1f;
+  color: #fff;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s;
-  margin-top: 30px;
-}
-
-
-.second-box{
-  min-height: 300px;
-  width: 50%;
-}
-.slika_header{
-  width: 950px;
-  height: 750px;
-  margin-left: 20px;
-  margin-bottom: 800px;
-}
-
-
-/* Za male ekrane (mobiteli) */
-@media (max-width: 480px) {
-  .font {
-    font-size: 40px;
-  }
-
-  .paragraph {
-    font-size: 16px;
-    margin-top: 20px;
-  }
-
-  .dugme-first-box {
-    width: 120px;
-    height: 35px;
-    font-size: 14px;
-  }
-
-  .slika_header {
-    width: 100%;
-    height: auto;
-    margin-left: 0;
-  }
-}
-
-/* Za srednje ekrane (tableti) */
-@media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .first-box, .second-box {
-    width: 100%;
-    text-align: center;
-  }
-
-  .font {
-    font-size: 60px;
-    margin-left: 0;
-  }
-
-  .paragraph {
-    margin-left: 0;
-    font-size: 18px;
-  }
-
-  .dugme-first-box {
-    width: 130px;
-    height: 35px;
-  }
-
-  .slika_header {
-    width: 100%;
-    height: auto;
-    margin-left: 0;
-    margin-bottom: 30px;
-  }
-}
-
-    @media (max-width: 1740px) {
-      .slika_header {
-        width: 99%; /* Smanji širinu slike na 90% ekrana */
-        height: 620px;
-      }
-    }
-/* Za laptop ekrane */
-@media (max-width: 1600px) {
-  
-  .font, .paragraph, .dugme-first-box{
-    margin-left: 110px;
-  }
-  .font{
-    font-size: 70px;
-  }
-  .slika_header {
-    width: 99%; /* Smanji širinu slike na 90% ekrana */
-    height: 620px;
-  }
-}
-
-/* Za laptop ekrane */
-@media (max-width: 1520px) {
-  .header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .first-box, .second-box {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .font {
-    font-size: 70px; /* Malo manji font za laptop */
-    margin-left: 0;
-  }
-
-  .paragraph {
-    margin-left: 0;
-    font-size: 20px;
-  }
-
-  .dugme-first-box {
-    width: 140px;
-    height: 40px;
-    margin-bottom: 120px;
-    margin-left: 0;
-  }
-
-  .slika_header {
-    width: 40%; /* Smanji širinu slike na 90% ekrana */
-    height: auto;
-    margin-left: 0;
-    margin-bottom: 70px;
-  }
 }
