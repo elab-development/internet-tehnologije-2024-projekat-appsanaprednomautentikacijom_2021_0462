@@ -23,6 +23,7 @@ import Footer from "./Components/Footer/Footer.jsx";
 
 
 function App() {
+  //Hardkodovani useri za kartice, svaka kartica ima sliku, destinaciju, opis i userName korisnika.
   const users = [
     {
       url: slikablog1,
@@ -71,6 +72,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="" element={<LoginForm/>} />
         <Route path="login" element={<LoginForm />} />
         <Route
           path="home"
@@ -78,7 +80,6 @@ function App() {
             <div className="big-div">
               <NavBar />
               <LandingPage />
-
               <Comment />
               <AboutUs />
               <Contact />
@@ -90,7 +91,6 @@ function App() {
         <Route path="blog" element={<Cards users={users} />} />
         <Route path="about us" element={<AboutUs/>} />
         <Route path="contact" element={<Contact/>} />
-
       </Routes>
     </BrowserRouter>
   );
