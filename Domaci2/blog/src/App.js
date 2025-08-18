@@ -1,98 +1,48 @@
-import LoginForm from "./Components/LoginForm/LoginForm.jsx";
+import { AuthForm } from "./Components/Auth/AuthForm/AuthForm.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import NavBar from "./Components/NavBar/NavBar.jsx";
-import Header from "./Components/Header/Header.jsx";
 import Comment from "./Components/Comment/Comment.jsx";
-import Cards from "./Components/Cards/Cards.jsx";
-import AboutUs from "./Components/AboutUs/AboutUs.jsx";
-import Contact from "./Components/Contact/Contact.jsx";
-import SlideShow from "./Components/SlideShow/SlideShow.jsx";
-import "./Components/Footer/Footer.jsx";
+import Cards from "./Components/Blog/Cards/Cards.jsx";
+import AboutUs from "./Components/Layout/AboutUs/AboutUs.jsx";
+import CreatePost from "./Components/Layout/CreatePost/CreatePost.jsx";
+import "./Components/Layout/Footer/Footer.jsx";
 import "react-slideshow-image/dist/styles.css";
-import LandingPage from "./Components/LandingPage/LandingPage.jsx";
+import LandingPage from "./Components/Layout/LandingPage/LandingPage.jsx";
+import EmailConfirmation from "./Components/Auth/EmailConfirmation/EmailConfirmation.jsx";
 
-
-//importovanje slika za kartice
-import slikablog1 from "./Components/Card/card_images/slikablog1.jpeg";
-import slikablog2 from "./Components/Card/card_images/slikablog2.jpg";
-import slikablog3 from "./Components/Card/card_images/slikablog3.jpg";
-import slikablog4 from "./Components/Card/card_images/slikablog4.jpg";
-import slikablog5 from "./Components/Card/card_images/slikablog5.jpeg";
-import slikablog6 from "./Components/Card/card_images/slikablog6.jpg";
-import Footer from "./Components/Footer/Footer.jsx";
-
-
+import Footer from "./Components/Layout/Footer/Footer.jsx";
+import ConfirmMfa from "./Components/Auth/ConfirmMfa/ConfirmMfa.jsx";
+import CreateMfa from "./Components/Auth/CreateMfa/CreateMfa.jsx";
+import { useEffect } from "react";
+import HomePage from "./Components/Layout/HomePage/HomePage.jsx";
+import { AuthProvider } from "./Context/Auth.jsx";
+import City from "./Components/Blog/City/City.jsx";
+import MyPosts from "./Components/Layout/MyPosts/MyPosts.jsx";
 function App() {
   //Hardkodovani useri za kartice, svaka kartica ima sliku, destinaciju, opis i userName korisnika.
-  const users = [
-    {
-      url: slikablog1,
-      destination: "Panama",
-      description:
-        "Explore Panama with me – a lively city with stunning nature and culture!",
-      userName: "Liam O'Connor",
-    },
-    {
-      url: slikablog2,
-      destination: "Paris",
-      description:
-        "Check out my review of Paris, the city of romance and culture! This is must see!",
-      userName: "Maria Gonzalez",
-    },
-    {
-      url: slikablog3,
-      destination: "Berlin",
-      description:
-        "Discover Berlin through my eyes – a city full of history and creativity!",
-      userName: "Elena Ivanova",
-    },
-    {
-      url: slikablog4,
-      destination: "Belgrade",
-      description:
-        "Check out my review of Belgrade, a vibrant city with a rich past, food and tradition!",
-      userName: "Ahmed Al-Farsi",
-    },
-    {
-      url: slikablog5,
-      destination: "Tokyo",
-      description:
-        "Take a look at my review of Tokyo, a blend of tradition and modernity!",
-      userName: "Sophia Müller",
-    },
-    {
-      url: slikablog6,
-      destination: "Rome",
-      description:
-        "Check out my review of Rome, where ancient history meets modern charm!",
-      userName: "Jin Park",
-    },
-  ];
+  const updateIsLoggedIn = (status) => {};
 
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="" element={<LoginForm/>} />
-        <Route path="login" element={<LoginForm />} />
-        <Route
-          path="home"
-          element={
-            <div className="big-div">
-              <NavBar />
-              <LandingPage />
-              <Comment />
-              <AboutUs />
-              <Contact />
-              <SlideShow />
-              <Footer />
-            </div>
-          }
-        />
-        <Route path="blog" element={<Cards users={users} />} />
-        <Route path="about us" element={<AboutUs/>} />
-        <Route path="contact" element={<Contact/>} />
-      </Routes>
-    </BrowserRouter>
+    <AuthProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="" element={<AuthForm type="Login" />} />
+          <Route path="login" element={<AuthForm type="Login" />} />
+          <Route path="home" element={<HomePage />} />
+          <Route path="register" element={<AuthForm type="Register" />} />
+          <Route path="blog" element={<Cards />} />
+          <Route path="about us" element={<AboutUs />} />
+          <Route path="createPost" element={<CreatePost />} />
+          <Route
+            path="confirmMfa"
+            element={<ConfirmMfa updateIsLoggedIn={updateIsLoggedIn} />}
+          />
+          <Route path="confirmEmail" element={<EmailConfirmation />} />
+          <Route path="createMfa" element={<CreateMfa />} />
+          <Route path="post/:id" element={<City />} />
+          <Route path="myPosts" element={<MyPosts />} />
+        </Routes>
+      </BrowserRouter>
+    </AuthProvider>
   );
 }
 

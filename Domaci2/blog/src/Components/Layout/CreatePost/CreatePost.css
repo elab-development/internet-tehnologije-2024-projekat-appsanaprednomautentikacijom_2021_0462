@@ -134,3 +134,10 @@
     margin-bottom: 30px;
   }
 }
+
+.form_element-message {
+  min-height: 40px;
+  max-height: 300px;
+  resize: none;
+  overflow: hidden;
+}
