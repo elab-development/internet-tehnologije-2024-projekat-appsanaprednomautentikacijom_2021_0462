@@ -1,0 +1,30 @@
+{
+  "name": "projekat",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./src/server.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@aws-sdk/client-cognito-identity-provider": "^3.731.1",
+    "@aws-sdk/client-dynamodb": "^3.738.0",
+    "amazon-cognito-identity-js": "^6.3.12",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "dynamoose": "^4.0.3",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "jwks-rsa": "^3.1.0",
+    "mongoose": "^8.9.1",
+    "uuid": "^11.0.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
