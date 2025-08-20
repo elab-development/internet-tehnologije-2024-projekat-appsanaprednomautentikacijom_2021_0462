@@ -89,7 +89,6 @@ export const AuthForm = (props) => {
                 placeholder="Username"
                 required
                 ref={usernameRef}
-                value="uros98aleksic@gmail.com"
               />
               <FaUser className="icon" />
             </div>
@@ -100,7 +99,6 @@ export const AuthForm = (props) => {
                 placeholder="Password"
                 required
                 ref={passwordRef}
-                value="Uros12345."
               />
               <FaLock className="icon" />
             </div>

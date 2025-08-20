@@ -9,6 +9,7 @@ import "react-slideshow-image/dist/styles.css";
 import LandingPage from "./Components/Layout/LandingPage/LandingPage.jsx";
 import EmailConfirmation from "./Components/Auth/EmailConfirmation/EmailConfirmation.jsx";
 
+
 import Footer from "./Components/Layout/Footer/Footer.jsx";
 import ConfirmMfa from "./Components/Auth/ConfirmMfa/ConfirmMfa.jsx";
 import CreateMfa from "./Components/Auth/CreateMfa/CreateMfa.jsx";
