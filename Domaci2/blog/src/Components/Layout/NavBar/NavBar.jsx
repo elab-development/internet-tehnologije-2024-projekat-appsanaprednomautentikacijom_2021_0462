@@ -21,11 +21,11 @@ function NavBar() {
                 Home
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/about us" className="about">
                 About
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link to="/blog" className="blog">
                 Blog

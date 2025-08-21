@@ -1,11 +1,11 @@
 .landing-container{
-border: 1px solid black;
+/* border: 1px solid black; */
 min-width: 1000px;
 height: 80vh;
 display: flex;
 }
 .left_part{
- border: 1px solid black;
+ /* border: 1px solid black; */
  height: 100%;
  flex: 1;
  display: flex;
@@ -20,7 +20,7 @@ display: flex;
 }
 
 .right_part{
- border: 1px solid black;
+ /* border: 1px solid black; */
  height: 100%;
  flex: 1;
   display: flex;

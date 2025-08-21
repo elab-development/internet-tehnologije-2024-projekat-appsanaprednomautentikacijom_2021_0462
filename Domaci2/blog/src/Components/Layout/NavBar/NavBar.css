@@ -68,6 +68,7 @@
 .navbar-links li:hover {
   background-color: #ffb703; 
   border-radius: 5px; /* Hover da bude zakrivljen */
+  cursor: pointer;
 }
 
 
