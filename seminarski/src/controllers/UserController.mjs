@@ -45,7 +45,6 @@ export default class UserController {
     const cognitoUser = new CognitoUser(userData);
     cognitoUser.authenticateUser(authenticationDetails, {
       onSuccess: function (result) {
-        //Printaj ovaj result pa vidi sta se tu nalazi
         const token = result.idToken.jwtToken;
         res.status(200).send({
           message: "Successfully logged in",
@@ -58,7 +57,7 @@ export default class UserController {
         });
       },
       mfaSetup: async function (challangeName, challangeParameters) {
-        console.log(challangeName, challangeParameters);
+        //prvo logovanje
         const session = cognitoUser.Session;
         const params = {
           Session: session,
@@ -126,7 +125,7 @@ export default class UserController {
     );
   }
 
-  confirm(req, res) {
+  confirmRegister(req, res) {
     const code = req.body.code;
     const username = req.body.username;
 

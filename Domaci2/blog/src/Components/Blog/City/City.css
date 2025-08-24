@@ -1,11 +1,13 @@
 /* Layout i header */
 .city-wrapper {
-  background: #fff;
+  margin-top: 50px;
+  background: white;
   border-radius: 18px;
   box-shadow: 0 16px 48px rgba(60, 60, 120, 0.15);
   padding: 40px 32px;
-  max-width: 760px; /* šire da stane lista komentara */
+  max-width: 100%; /* šire da stane lista komentara */
   width: 100%;
+  height: 70vh;
   text-align: left; /* prirodniji tok teksta */
 }
 

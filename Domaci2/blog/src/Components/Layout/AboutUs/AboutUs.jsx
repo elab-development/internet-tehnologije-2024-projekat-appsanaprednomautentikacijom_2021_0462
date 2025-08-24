@@ -5,41 +5,42 @@ import NavBar from "../NavBar/NavBar";
 
 function AboutUs() {
   return (
-    <>
-      <NavBar />
-      <div className="about-container">
-        <div className="about-content">
-          <div className="about-left"></div>
-          <div className="about-right">
-            <div className="about-right-content">
-              <h1 className="about-h1">Get to Know Us</h1>
-              <p className="about-p">
-                Welcome to TravelBlog, your go-to destination for travel
-                inspiration, tips, and unforgettable adventures! We’re a team of
-                passionate travelers who believe that every journey—whether it’s
-                a weekend getaway or a months-long expedition—has a story to
-                tell. Our mission is to share firsthand experiences, hidden
-                gems, and practical advice to help you explore the world with
-                confidence and excitement.
-                <br />
-                <br />
-                From bustling cities to remote landscapes, we cover it
-                all—offering destination guides, budget-friendly travel hacks,
-                cultural insights, and breathtaking photography to fuel your
-                wanderlust. Whether you’re a solo traveler, a couple seeking
-                romantic escapes, or a family looking for fun-filled vacations,
-                we have something for you. Join us as we explore the world one
-                adventure at a time. Let’s turn travel dreams into
-                reality—together! Follow our journey & start yours today!
-                <br />
-                <br />
-              </p>
-              <img src={img} alt="" className="aboutus" />
-            </div>
+    <div className="about_cont">
+
+        <div className="lef">
+                      <div className="nas">
+                        <h1 className="leftitle">Creativity</h1>
+                      </div>
+                      <div className="lefdown">
+                     <p className="lefpar">
+                        Creativity is at the heart of everything we do. It drives us to think differently, challenge the ordinary, and bring fresh, innovative ideas to life. Whether we're designing, building, or problem-solving, we believe creativity is the key to making meaningful connections and creating lasting impact.
+                     </p>
+                     </div>
+        </div>
+
+
+        <div className="mid">
+          <div className="midup">
+              <h1 className="miduph1">Passion</h1>
+          </div>
+          <div className="middown">
+            <p className="middownp">Passion fuels our work and inspires everything we create. It’s the driving force behind our dedication, pushing us to go the extra mile and never settle for average. With genuine enthusiasm for what we do, we approach every challenge with energy, purpose, and a love for the craft.</p>
           </div>
         </div>
-      </div>
-    </>
+
+
+        <div className="rig">
+            <div className="rignas">
+              <h1 className="righ1">Integrity</h1>
+            </div>
+            <div className="rigdown">
+            <p className="rigp">
+              Integrity is at the core of who we are. We believe in being honest, consistent, and accountable in everything we do. By building trust through our actions and staying true to our values, we create meaningful relationships and deliver work we’re proud of.
+            </p>
+            </div>
+        </div>
+
+    </div>
   );
 }
 

@@ -12,6 +12,7 @@ const HomePage = () => {
       <NavBar />
       <LandingPage />
       <Comment />
+        <AboutUs/>
       <SlideShow />
       <Footer />
     </div>

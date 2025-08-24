@@ -7,20 +7,14 @@
   transition: transform 0.3s ease-in-out;
   margin: 20px;
   padding: 15px;
-  /* background-color: #262626; */
+  /* background-color: #f4edff; */
 }
 
 .blogCard:hover {
   transform: translateY(-10px); /* Lift the card effect */
 }
 
-.blogCard img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 8px;
-  
-}
+
 
 .destinationName {
   font-size: 24px;

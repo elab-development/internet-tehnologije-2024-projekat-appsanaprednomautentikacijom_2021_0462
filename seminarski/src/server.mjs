@@ -5,7 +5,15 @@ import postRouter from "./routers/postRouter.mjs";
 import cors from "cors";
 const app = express();
 app.use(cors()); // Allow all domains
-app.use(express.json());
+app.use(express.json()); //json format konvertuj u js
+
+
+// app.get('/uros', function(req,res){
+//   const objekat = {
+//     ime: 'uros'
+//   }
+//   res.send(objekat);
+// })
 
 app.use("/user", userRouter);
 app.use("/post", postRouter);

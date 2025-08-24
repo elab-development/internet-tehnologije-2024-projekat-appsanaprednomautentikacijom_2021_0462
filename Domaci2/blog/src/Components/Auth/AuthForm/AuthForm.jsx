@@ -86,7 +86,7 @@ export const AuthForm = (props) => {
             <div className="input-box">
               <input
                 type="text"
-                placeholder="Username"
+                placeholder="Email"
                 required
                 ref={usernameRef}
               />
@@ -105,7 +105,7 @@ export const AuthForm = (props) => {
 
             <div className="remember-forgot">
               {props.type === "Login" ? (
-                <a href="#">Forgot password? </a>
+               <></>
               ) : (
                 <Link to="/login">
                   Already have an account? <b>Login</b>

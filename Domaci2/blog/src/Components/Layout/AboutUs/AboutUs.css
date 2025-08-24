@@ -1,95 +1,116 @@
-.about-container {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  min-width: 300px;
-  height: 100vh;
-  background-color: #7fbd8a;
+.about_cont{
+  height: 70vh;
+  /* background-color: red; */
   display: flex;
+  margin-top: 100px;
   align-items: center;
-  justify-content: center;
-  margin-top: 250px;
-/* background-color: #7fbd8a; */
+  justify-content: space-around;
 }
-.about-content {
-  width: 90%;
-  height: 90%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.about-left {
-  width: 40%;
-  height: 90%;
-  flex-shrink: 1;
-  /* background: url("./AboutUs_images/ppp.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border: 2px solid black;
-  border-right: 0px; */
-  background-color: red;
-  border-radius:
-52% 48% 17% 83% / 45% 63% 37% 55%;
-
-  background-image: url('./AboutUs_images/uublob.avif');
-  background-size: cover;
-}
-.about-right {
-  width: 60%;
-  /* background-color: #3c3d37; */
-  height: 90%;
-  display: flex;
-  align-items: start;
-  justify-content: center;
-  flex-shrink: 1;
-  border-left: 0px;
-  background-image: url('./AboutUs_images/aboutblob.png');
-  background-position: right;
-  background-size: 100% auto;
-  
-}
-.aboutus{
-height: 35vh;
-margin-left: 400px;
-}
-.about-right-content {
+.lef{
+ box-shadow: 0 10px 16px rgba(0, 0, 0, 0.4);
+  height: 100%;
+  width: 20%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  border-radius: 0px 50px 50px 0px;
+  
+  
+}
+.lefdown{
+ 
+  height: 50%;
+  width: 100%;
+  background-color: 
+#e0cefe;
+border-radius:
+100% 0% 100% 0% / 97% 29% 71% 3%
+}
+.lef:hover {
+  transform: scale(1.03); /* Slightly enlarge the card on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance the shadow on hover */
+}
+.mid:hover {
+  transform: scale(1.03); /* Slightly enlarge the card on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance the shadow on hover */
+}
+.rig:hover {
+  transform: scale(1.03); /* Slightly enlarge the card on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance the shadow on hover */
+}
+.nas{
+  height: 50%;
+  width: 100%;
+  display: flex;
   justify-content: center;
-  padding: 50px 30px;
-  margin-top: 20px;
+  align-items: center;
+  background-color: 	#8a4fff;
+  border-radius:
+0% 100% 0% 100% / 0% 32% 68% 100%
 }
-.about-h1 {
-  font-family: "Merriweather", serif;
-  font-weight: 900;
-  font-style: normal;
-  font-size: 50px;
-  color: black;
-  padding-bottom: 30px;
+.lefpar{
+  text-align: center;
 }
-.about-p {
-  font-family: "Montserrat", serif;
-  font-optical-sizing: auto;
-  font-weight: 800;
-  font-style: normal;
-  color: black;
-  word-break: break-all;
-  font-size: 20px;
+.mid{
+  background-color: white;
+  height: 100%;
+  width: 20%;
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+box-shadow: 0 10px 16px rgba(0, 0, 0, 0.4);
+  border-radius: 0px 50px 50px 0px;
+}
+.midup{
+  display: flex;
+align-items: center;
+justify-content: center;
+  height: 50%;
+  width: 100%;
+  background-color: 
+#ffc801;
+  border-radius:
+0% 100% 0% 100% / 0% 32% 68% 100%;
+
 }
 
-@media (max-width: 1107px) {
-  .about-left {
-    display: none;
-  }
-  .about-h1 {
-    font-size: 25px;
-  }
-  .about-p {
-    font-size: 10px;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    white-space: normal;
-  }
+.middown{
+  height: 50%;
+  width: 100%;
+  background-color: 
+#8a4fff;
+border-radius:
+100% 0% 100% 0% / 97% 29% 71% 3%
+}
+.middownp{
+  text-align: center;
+  font-weight: 800;
+}
+.rig{
+   background-color: white;
+  height: 100%;
+  width: 20%;
+  border-radius: 0px 50px 50px 0px;
+ box-shadow: 0 10px 16px rgba(0, 0, 0, 0.4);
+  
+}
+.rignas{
+    height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: 	#8a4fff;
+  border-radius:
+0% 100% 0% 100% / 0% 32% 68% 100%
+}
+.rigdown{
+  height: 50%;
+  width: 100%;
+  background-color: 
+#e0cefe;
+border-radius:
+100% 0% 100% 0% / 97% 29% 71% 3%
+}
+.rigp{
+  text-align: center;
 }

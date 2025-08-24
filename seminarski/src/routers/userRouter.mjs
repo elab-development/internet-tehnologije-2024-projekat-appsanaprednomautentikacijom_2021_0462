@@ -5,7 +5,7 @@ const controller = new UserController();
 
 router.post("/register", controller.register.bind(controller));
 
-router.post("/confirm", controller.confirm.bind(controller));
+router.post("/confirm", controller.confirmRegister.bind(controller));
 
 router.post("/login", controller.login.bind(controller));
 
