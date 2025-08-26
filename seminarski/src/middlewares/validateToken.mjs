@@ -14,7 +14,7 @@ const getPublicKey = async (header) => {
 export default async function validateToken(req, res, next) {
   const token = req.headers.authorization.split(" ")[1];
   if (!token) {
-    res.status(401).send("Nemas token majmune");
+    res.status(401).send("Nemas token ");
   }
 
   try {
